@@ -26,11 +26,11 @@ public class Main {
             String guess = scanner.nextLine();
             int intGuess = Integer.parseInt(guess);
 
-            // Pergunte ao navio o resultado
+            // Pergunta ao navio o resultado
             String result = myShip.checkYourself(intGuess);
-            System.out.println(result); // <--- ADICIONE ISSO
+            System.out.println(result);
             numGuess++;
-            // Verifique se o jogo acabou
+            // Verifica se o jogo acabou
             if (result.equals("kill")) {
                 itsAlive = false;
                 System.out.println("Você afundou o navio em " + numGuess + " tentativas!");
