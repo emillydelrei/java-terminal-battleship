@@ -2,7 +2,6 @@ public class Ship {
 
     public int[] locationsCells;
     public int numOfHits = 0;
-    public int[] userGuess;
 
 
     //metodo para verificar o chute e retornar um hit, miss ou kill.
