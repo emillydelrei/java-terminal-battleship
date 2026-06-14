@@ -6,11 +6,11 @@ public class Main {
 
         java.util.Random randomGeneration = new java.util.Random();
         Scanner scanner = new Scanner(System.in);
-        int[] sea = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] sea = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10};
         int tamanhomar = sea.length - 3;
         int posicaoInicial = randomGeneration.nextInt(tamanhomar);
         int[] posicao = {posicaoInicial + 1, posicaoInicial + 2, posicaoInicial};
-
+        int seaSize = sea.length - 1;
         Ship myShip = new Ship();
 
         myShip.setLocationsCells(posicao);
@@ -22,15 +22,15 @@ public class Main {
         while (itsAlive) {
 
 
-            System.out.println("digite seu palpite de 0 á " + sea.length);
+            System.out.println("digite seu palpite de 0 á " + seaSize);
 
             try {
                 String guess = scanner.nextLine();
                 int intGuess = Integer.parseInt(guess);
 
 
-                if (intGuess < 0 || intGuess > 9) {
-                    System.out.println("Digite um número entre 0 e " + sea.length);
+                if (intGuess < 0 || intGuess > seaSize) {
+                    System.out.println("Digite um número entre 0 e " + seaSize);
                     continue;
                 }
 
