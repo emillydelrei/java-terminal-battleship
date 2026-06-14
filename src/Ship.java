@@ -7,20 +7,21 @@ public class Ship {
     //metodo para verificar o chute e retornar um hit, miss ou kill.
     public String checkYourself(int userGuess) {
         String resultado = "miss";
-        for (int cell : locationsCells) {
-            if (userGuess == cell) {
+
+        for (int i = 0; i < locationsCells.length; i++) {
+            if (userGuess == locationsCells[i]) {
                 resultado = "hit";
+                locationsCells[i] = -1;
                 numOfHits++;
                 break;
             }
-
         }
+
         if (numOfHits == locationsCells.length) {
             resultado = "kill";
         }
 
         return resultado;
-
     }
 
     public void setLocationsCells(int[] cellLocation) {
