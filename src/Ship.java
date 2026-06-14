@@ -1,7 +1,7 @@
 public class Ship {
 
-    public int[] locationsCells;
-    public int numOfHits = 0;
+    private int[] locationsCells;
+    private int numOfHits = 0;
 
 
     //metodo para verificar o chute e retornar um hit, miss ou kill.
