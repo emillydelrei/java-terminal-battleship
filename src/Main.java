@@ -6,7 +6,7 @@ public class Main {
 
         java.util.Random randomGeneration = new java.util.Random();
         Scanner scanner = new Scanner(System.in);
-        int[] sea = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10};
+        int[] sea = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int tamanhomar = sea.length - 3;
         int posicaoInicial = randomGeneration.nextInt(tamanhomar);
         int[] posicao = {posicaoInicial + 1, posicaoInicial + 2, posicaoInicial};
@@ -47,8 +47,7 @@ public class Main {
             }
         }
         scanner.close();
-
-
+        
     }
 }
 
